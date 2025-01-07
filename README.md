@@ -1,2 +1,2 @@
 # gesture-homecontrol
-sbc project to recognize hand gestures using OpenCV and control HomeKit devices via Homebridge.
+sbc project to control hue lights using hand gestures
