@@ -6,6 +6,11 @@ mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
 mp_connections = mp.solutions.hands.HandLandmark
 
+
+def classify_gesture(landmarks):
+    return "None"
+
+
 def main():
     camera_port = 0
     cap = cv2.VideoCapture(camera_port)
@@ -40,6 +45,9 @@ def main():
                     mp_drawing.draw_landmarks(
                         frame, hand_landmarks, mp_hands.HAND_CONNECTIONS
                     )
+
+                    # Classify the gesture
+                    print(classify_gesture(hand_landmarks.landmark))
 
             # Display the frame
             cv2.imshow("Hand Tracking", frame)
