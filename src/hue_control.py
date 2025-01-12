@@ -7,8 +7,9 @@ BRIDGE_IP = "192.168.1.19"
 # light IDs
 LIGHT_IDS = [8, 9, 10]
 
-# The 'hue' range is 0-65535, and 'sat' range is 0-254.
-# 'bri' range is 1-254. 
+# The 'hue' range is 0-65535, 
+# The 'sat' range is 0-254.
+# The 'bri' range is 1-254. 
 COLOR_MAP = {
     "red":    {"hue": 0,      "sat": 254},
     "orange": {"hue": 6000,   "sat": 254},
