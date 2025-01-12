@@ -13,19 +13,27 @@ mp_connections = mp.solutions.hands.HandLandmark
 # Path to the gesture recognition model
 MODEL_PATH = "src/models/gesture_recognizer.task"
 
-def classify_gesture(landmarks):
-    """
-    Classify the gesture based on hand landmarks.
-    Detects:
-    - Thumbs Up
-    - Thumbs Down
-    - Middle Finger
-    - OK Sign
-    - Fist
-    - Hand Open
-    """
+# def classify_gesture(landmarks):
+#     """
+#     Classify the gesture based on hand landmarks.
+#     Detects:
+#     - Thumbs Up
+#     - Thumbs Down
+#     - Middle Finger
+#     - OK Sign
+#     - Fist
+#     - Hand Open
+#     """
 
 def initialize_gesture_recognizer():
+# 0 - Unrecognized gesture, label: Unknown
+# 1 - Closed fist, label: Closed_Fist
+# 2 - Open palm, label: Open_Palm
+# 3 - Pointing up, label: Pointing_Up
+# 4 - Thumbs down, label: Thumb_Down
+# 5 - Thumbs up, label: Thumb_Up
+# 6 - Victory, label: Victory
+# 7 - Love, label: ILoveYou
     base_options = python.BaseOptions(model_asset_path=MODEL_PATH)
     options = vision.GestureRecognizerOptions(base_options=base_options)
     return vision.GestureRecognizer.create_from_options(options)
