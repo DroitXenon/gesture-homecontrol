@@ -17,7 +17,6 @@ COLOR_MAP = {
     "blue":   {"hue": 43690,  "sat": 254},
     "purple": {"hue": 50000,  "sat": 254},
     "pink":   {"hue": 56100,  "sat": 254},
-    # "white" can be done in a few ways—here we reduce saturation:
     "white":  {"hue": 0,      "sat": 0},
 }
 
