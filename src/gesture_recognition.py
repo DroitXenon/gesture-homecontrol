@@ -11,7 +11,7 @@ mp_drawing = mp.solutions.drawing_utils
 mp_connections = mp.solutions.hands.HandLandmark
 
 # Path to the gesture recognition model
-MODEL_PATH = "src/models/gesture_recognizer.task"
+MODEL_PATH = "models/gesture_recognizer.task"
 
 # def classify_gesture(landmarks):
 #     """
