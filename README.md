@@ -1,6 +1,6 @@
-# Gesture Homecontrol
+# Wave Switch
 
-This project uses a Raspberry Pi with OpenCV and MediaPipe to recognize hand gestures and control HomeKit devices via Homebridge.
+This project uses a Raspberry Pi with OpenCV and MediaPipe to recognize hand gestures and control HomeKit devices via Phue.
 
 ---
 
