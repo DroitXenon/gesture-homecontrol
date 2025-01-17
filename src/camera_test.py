@@ -1,6 +1,6 @@
 import cv2
 
-active_ports = [0]  # Update based on your output
+active_ports = [1]  # Update based on your output
 
 for port in active_ports:
     print(f"Testing /dev/video{port}...")

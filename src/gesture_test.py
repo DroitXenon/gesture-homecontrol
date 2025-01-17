@@ -43,7 +43,7 @@ def recognize_gesture_from_camera():
     
     recognizer = initialize_gesture_recognizer()
     
-    camera_port = 0
+    camera_port = 1
     cap = cv2.VideoCapture(camera_port)
 
     # Error Detection
