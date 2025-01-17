@@ -14,7 +14,7 @@ This project uses a Raspberry Pi with OpenCV and MediaPipe to recognize hand ges
 ### Software
 - Raspberry Pi OS or Ubuntu.
 - Python 3.7+.
-- Homebridge for HomeKit integration.
+- Phue for Philips Hue integration.
 
 ---
 
@@ -31,3 +31,5 @@ cd raspi-gesture-homekit
 Install the required Python libraries:
 pip install -r requirements.txt
 ```
+
+[Hue Bridge IP](https://discovery.meethue.com/)
